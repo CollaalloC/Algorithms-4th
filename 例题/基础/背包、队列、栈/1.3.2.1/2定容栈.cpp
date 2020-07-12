@@ -3,7 +3,7 @@
 #include <vector>
 
 using namespace std;
-
+//采用类模板或者函数模板实现泛型编程
 class FixedCapacityStackOfStrings
 {
 private:
