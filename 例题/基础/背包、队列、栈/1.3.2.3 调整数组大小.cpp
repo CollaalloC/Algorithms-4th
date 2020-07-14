@@ -21,9 +21,13 @@ void resize(int max)
     {
         temp[i]=s[i];
     }
-
+    /*
     s = temp;//这部分存疑，C++如果回收内存之后，s指向的内存空间是否仍然有效？
     delete temp;
+    */ //错误版本
+    delete[] s; //删除原先指针指向的内存空间，将更改大小后的内存空间指向s,偷梁换柱
+    s = temp;
+    temp = NULL;//避免内存泄漏(是否有用存疑)
 }
 
 //实验，new 与 delete 之后的数组变化情况
