@@ -1,9 +1,10 @@
 #include<iostream>
 
 using namespace std;
-
-//删除链表的尾节点
+/*
+题目：给出一段代码，删除链表尾节点，链表首结点为first
 //遍历法
+*/
 //创建链表
 struct node
 {
