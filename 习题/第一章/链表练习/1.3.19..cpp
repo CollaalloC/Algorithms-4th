@@ -17,13 +17,14 @@ node* creat(int Array[])
 {
     node *pre, *p ,*first;
     first = new node;
-    first->next = NULL;
+    first->next = nullptr;
     pre = first;
     for(int i = 0; i < 20; i++)
     {
         p = new node;
         p->a=Array[i];
-        p->next = NULL;//新节点的指针设为NULL.作为保险措施
+        p->next = nullptr;//新节点的指针设为NULL.作为保险措施.
+        //改正：空指针最后用nullptr
         pre->next=p;
         pre = p;
     }
